@@ -3,23 +3,11 @@ import { Input } from './ui/input'
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative flex w-full flex-col items-center overflow-hidden bg-[#FAF338] py-16">
-      {/* 上波浪 */}
-      <div className="pointer-events-none absolute top-0 left-0 h-8 w-full -translate-y-full select-none">
-        <svg
-          viewBox="0 0 1200 32"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-full w-full"
-        >
-          <path
-            d="M0 16C100 32 200 0 300 16C400 32 500 0 600 16C700 32 800 0 900 16C1000 32 1100 0 1200 16V32H0V16Z"
-            fill="#fff"
-          />
-        </svg>
+    <footer className="relative flex w-full flex-col items-center overflow-hidden py-16">
+      <div className="left-0 w-full rotate-360 transform">
+        <img src="/src/assets/wave.svg" alt="wave" />
       </div>
-      {/* 內容 */}
-      <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center px-4">
+      <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center bg-[#FAF338] px-4">
         <h2
           className="mb-4 text-center text-[48px] font-bold tracking-tight text-[#000000] uppercase"
           style={{ fontFamily: 'Outfit, sans-serif' }}
@@ -59,19 +47,8 @@ const Footer: React.FC = () => {
           </Button>
         </form>
       </div>
-      {/* 下波浪 */}
-      <div className="pointer-events-none absolute bottom-0 left-0 h-8 w-full translate-y-full select-none">
-        <svg
-          viewBox="0 0 1200 32"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-full w-full"
-        >
-          <path
-            d="M0 16C100 32 200 0 300 16C400 32 500 0 600 16C700 32 800 0 900 16C1000 32 1100 0 1200 16V32H0V16Z"
-            fill="#fff"
-          />
-        </svg>
+      <div className="left-0 w-full rotate-180 transform">
+        <img src="/src/assets/wave.svg" alt="wave" />
       </div>
     </footer>
   )

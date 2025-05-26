@@ -3,6 +3,15 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.footer {
+  width: 100%;
+  min-height: 562px;
+  margin-top: 101px;
+  padding-left: 54px;
+  background: #FFFFFF;
+  border-top: 1px solid #EBEBEB;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
