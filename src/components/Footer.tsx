@@ -26,17 +26,20 @@ const Footer: React.FC = () => {
         <p className="mb-8 max-w-2xl text-center text-[24px] font-normal tracking-tight text-[#494706]">
           Get the latest news and updates delivered straight to your inbox.
         </p>
-        <form className="flex w-full max-w-md items-center rounded-full border border-black bg-white px-2 py-2 shadow-md">
+        <form className="flex h-[100px] w-[688px] items-center gap-2.5 rounded-[70px] border border-black bg-white px-6 py-2 shadow-md">
           <Input
             type="email"
-            placeholder="Enter your email"
-            className="flex-1 border-none bg-transparent px-6 py-2 text-lg placeholder:text-gray-500 focus:ring-0"
+            placeholder="your email address"
+            className="flex-1 border-none bg-transparent px-0 py-0 text-xl font-bold placeholder:text-gray-400 focus:ring-0 focus:outline-none"
           />
           <Button
             type="submit"
-            className="ml-2 rounded-full border border-black bg-gradient-to-r from-[#FFF] via-[#FFF86A] to-[#FFD600] px-8 py-2 font-bold text-black shadow transition hover:from-[#FFFDE4] hover:to-[#FFD600]"
+            className="relative h-[80px] min-w-[180px] rounded-[60px] border-none bg-white font-bold text-black shadow ring-2 ring-transparent ring-offset-2 ring-offset-white transition before:absolute before:inset-0 before:-z-10 before:rounded-[60px] before:bg-gradient-to-r before:from-[#FFF] before:via-[#FFF86A] before:to-[#FFD600] before:opacity-60 hover:ring-2 hover:ring-[#e0c3fc]"
+            style={{
+              boxShadow: '0 0 0 3px #e0c3fc, 0 0 8px #fff0'
+            }}
           >
-            Subscribe
+            SUBSCRIBE
           </Button>
         </form>
       </div>
