@@ -5,9 +5,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="relative flex w-full flex-col items-center overflow-hidden py-16">
       <div className="left-0 w-full rotate-360 transform">
-        <img src="/src/assets/wave.svg" alt="wave" />
+        <img src="/src/assets/wave.svg" alt="wave" className="w-full" />
       </div>
-      <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center bg-[#FAF338] px-4">
+      <div className="mx-auto flex w-full flex-col items-center bg-[#FAF338] px-4">
         <h2
           className="mb-4 text-center text-[48px] font-bold tracking-tight text-[#000000] uppercase"
           style={{ fontFamily: 'Outfit, sans-serif' }}
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
         </form>
       </div>
       <div className="left-0 w-full rotate-180 transform">
-        <img src="/src/assets/wave.svg" alt="wave" />
+        <img src="/src/assets/wave.svg" alt="wave" className="w-full" />
       </div>
     </footer>
   )
