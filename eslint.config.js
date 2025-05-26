@@ -6,7 +6,13 @@ import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
-  { ignores: ['dist'] },
+  {
+    ignores: [
+      'dist',
+      'src/components/ui/**/*.{js,jsx,ts,tsx}',
+      'src/components/ui/*.{js,jsx,ts,tsx}'
+    ]
+  },
   {
     extends: [
       js.configs.recommended,
