@@ -20,10 +20,16 @@ const Footer: React.FC = () => {
       </div>
       {/* 內容 */}
       <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center px-4">
-        <h2 className="mb-4 text-center text-[48px] font-bold tracking-tight text-[#000000] uppercase">
+        <h2
+          className="mb-4 text-center text-[48px] font-bold tracking-tight text-[#000000] uppercase"
+          style={{ fontFamily: 'Outfit, sans-serif' }}
+        >
           Don’t Miss Out
         </h2>
-        <p className="mb-8 max-w-2xl text-center text-[24px] font-normal tracking-tight text-[#494706]">
+        <p
+          className="mb-8 max-w-2xl text-center text-[24px] font-normal tracking-tight text-[#494706]"
+          style={{ fontFamily: 'Outfit, sans-serif' }}
+        >
           Get the latest news and updates delivered straight to your inbox.
         </p>
         <form className="flex h-[100px] w-[688px] items-center gap-2.5 rounded-[70px] border border-black bg-white px-6 py-2 shadow-md">
@@ -42,6 +48,24 @@ const Footer: React.FC = () => {
             SUBSCRIBE
           </Button>
         </form>
+        <div
+          style={{
+            width: 203,
+            height: 24,
+            position: 'absolute',
+            top: 38,
+            left: 36,
+            opacity: 0.5,
+            fontFamily: 'Outfit, sans-serif',
+            fontWeight: 800,
+            fontSize: 24,
+            lineHeight: '100%',
+            letterSpacing: '-2%',
+            pointerEvents: 'none'
+          }}
+        >
+          SUBSCRIBE
+        </div>
       </div>
       {/* 下波浪 */}
       <div className="pointer-events-none absolute bottom-0 left-0 h-8 w-full translate-y-full select-none">
