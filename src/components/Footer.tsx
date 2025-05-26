@@ -3,7 +3,7 @@ import { Input } from './ui/input'
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative flex w-full flex-col items-center overflow-hidden bg-[#FFF86A] py-16">
+    <footer className="relative flex w-full flex-col items-center overflow-hidden bg-[#FAF338] py-16">
       {/* 上波浪 */}
       <div className="pointer-events-none absolute top-0 left-0 h-8 w-full -translate-y-full select-none">
         <svg
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
       </div>
       {/* 內容 */}
       <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center px-4">
-        <h2 className="mb-4 text-center text-[48px] font-bold tracking-tight text-black uppercase">
+        <h2 className="mb-4 text-center text-[48px] font-bold tracking-tight text-[#000000] uppercase">
           Don’t Miss Out
         </h2>
         <p className="mb-8 max-w-2xl text-center text-[24px] font-normal tracking-tight text-[#494706]">
