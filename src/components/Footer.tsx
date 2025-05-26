@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           />
           <Button
             type="submit"
-            className="border-image-[linear-gradient(245.4deg,_#3958FC_18.85%,_#CCFF00_48.99%,_#BD00FF_81.15%)_1] relative flex h-[84px] w-[203px] items-center justify-center gap-2 rounded-[66px] border-2 bg-gradient-to-b from-[#FFFFFE] to-[#E8E8E8] p-2 font-bold text-black shadow-[0_0_0_4px_#FFFFFF26]"
+            className="relative z-0 flex h-[84px] w-[203px] items-center justify-center gap-2 rounded-[66px] bg-white font-bold text-black shadow-md transition before:absolute before:inset-0 before:-z-10 before:rounded-[66px] before:bg-[conic-gradient(at_top_right,_#3958FC,_#CCFF00,_#BD00FF,_#3958FC)] before:p-[2px] before:content-[''] after:absolute after:inset-[2px] after:-z-10 after:rounded-[64px] after:bg-white after:content-[''] hover:before:bg-[conic-gradient(at_top_right,_#3958FC,_#CCFF00,_#BD00FF,_#3958FC,_#3958FC)]"
           >
             SUBSCRIBE
           </Button>
