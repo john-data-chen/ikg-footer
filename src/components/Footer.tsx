@@ -40,32 +40,24 @@ const Footer: React.FC = () => {
           />
           <Button
             type="submit"
-            className="relative h-[80px] min-w-[180px] rounded-[60px] border-none bg-white font-bold text-black shadow ring-2 ring-transparent ring-offset-2 ring-offset-white transition before:absolute before:inset-0 before:-z-10 before:rounded-[60px] before:bg-gradient-to-r before:from-[#FFF] before:via-[#FFF86A] before:to-[#FFD600] before:opacity-60 hover:ring-2 hover:ring-[#e0c3fc]"
+            className="relative flex h-[84px] min-w-[168px] items-center justify-center gap-2 rounded-[66px] border-2 bg-gradient-to-b from-[#FFFFFE] to-[#E8E8E8] p-2 font-bold text-black shadow-[0_0_0_4px_#FFFFFF26]"
             style={{
-              boxShadow: '0 0 0 3px #e0c3fc, 0 0 8px #fff0'
+              borderImage:
+                'linear-gradient(245.4deg, #3958FC 18.85%, #CCFF00 48.99%, #BD00FF 81.15%) 1',
+              borderWidth: 2
+            }}
+            onMouseOver={(e) => {
+              ;(e.currentTarget as HTMLElement).style.borderImage =
+                'linear-gradient(110.51deg, #3958FC 22.55%, #CCFF00 49.11%, #BD00FF 77.45%) 1'
+            }}
+            onMouseOut={(e) => {
+              ;(e.currentTarget as HTMLElement).style.borderImage =
+                'linear-gradient(245.4deg, #3958FC 18.85%, #CCFF00 48.99%, #BD00FF 81.15%) 1'
             }}
           >
             SUBSCRIBE
           </Button>
         </form>
-        <div
-          style={{
-            width: 203,
-            height: 24,
-            position: 'absolute',
-            top: 38,
-            left: 36,
-            opacity: 0.5,
-            fontFamily: 'Outfit, sans-serif',
-            fontWeight: 800,
-            fontSize: 24,
-            lineHeight: '100%',
-            letterSpacing: '-2%',
-            pointerEvents: 'none'
-          }}
-        >
-          SUBSCRIBE
-        </div>
       </div>
       {/* 下波浪 */}
       <div className="pointer-events-none absolute bottom-0 left-0 h-8 w-full translate-y-full select-none">
