@@ -28,20 +28,7 @@ const Footer: React.FC = () => {
           />
           <Button
             type="submit"
-            className="relative flex h-[84px] min-w-[168px] items-center justify-center gap-2 rounded-[66px] border-2 bg-gradient-to-b from-[#FFFFFE] to-[#E8E8E8] p-2 font-bold text-black shadow-[0_0_0_4px_#FFFFFF26]"
-            style={{
-              borderImage:
-                'linear-gradient(245.4deg, #3958FC 18.85%, #CCFF00 48.99%, #BD00FF 81.15%) 1',
-              borderWidth: 2
-            }}
-            onMouseOver={(e) => {
-              ;(e.currentTarget as HTMLElement).style.borderImage =
-                'linear-gradient(110.51deg, #3958FC 22.55%, #CCFF00 49.11%, #BD00FF 77.45%) 1'
-            }}
-            onMouseOut={(e) => {
-              ;(e.currentTarget as HTMLElement).style.borderImage =
-                'linear-gradient(245.4deg, #3958FC 18.85%, #CCFF00 48.99%, #BD00FF 81.15%) 1'
-            }}
+            className="border-image-[linear-gradient(245.4deg,_#3958FC_18.85%,_#CCFF00_48.99%,_#BD00FF_81.15%)_1] relative flex h-[84px] w-[203px] items-center justify-center gap-2 rounded-[66px] border-2 bg-gradient-to-b from-[#FFFFFE] to-[#E8E8E8] p-2 font-bold text-black shadow-[0_0_0_4px_#FFFFFF26]"
           >
             SUBSCRIBE
           </Button>
