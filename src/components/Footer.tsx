@@ -3,7 +3,7 @@ import { Input } from './ui/input'
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative flex w-full flex-col items-center overflow-hidden py-16">
+    <footer className="relative mt-[101px] flex min-h-[562px] w-[1920px] flex-col items-center overflow-hidden border-t border-[#EBEBEB] bg-white py-16 pl-[54px]">
       <div className="left-0 w-full rotate-360 transform">
         <img src="/wave.svg" alt="wave" className="w-full" />
       </div>
