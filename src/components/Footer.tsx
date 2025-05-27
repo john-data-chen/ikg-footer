@@ -1,5 +1,6 @@
 import { Button } from './ui/button'
 import { Input } from './ui/input'
+import { cn } from '@/lib/utils'
 
 const Footer: React.FC = () => {
   return (
@@ -26,9 +27,34 @@ const Footer: React.FC = () => {
           >
             <div className="absolute inset-0 -z-10 rounded-[inherit] bg-[conic-gradient(from_245.4deg_at_50%_50%,_#3958FC_18.85%,_#CCFF00_48.99%,_#BD00FF_81.15%)] group-hover:bg-[conic-gradient(from_110.51deg_at_50%_50%,_#3958FC_22.55%,_#CCFF00_49.11%,_#BD00FF_77.45%)]"></div>
             <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-[64px] bg-gradient-to-b from-white to-[#E7E7E7] shadow-[inset_0_0_0_2px_rgba(255,255,255,0.75)] group-hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,0.9)]">
-              <span className="font-[Outfit] text-[16px] leading-[16px] font-bold tracking-[-0.02em] uppercase transition-all duration-300 ease-in-out group-hover:translate-y-3 group-hover:opacity-0">
-                SUBSCRIBE
-              </span>
+              {/* Container for text animation */}
+              <div className="relative h-[16px] w-auto">
+                {' '}
+                {/* Text that fades out and moves down */}
+                <span
+                  className={cn(
+                    'absolute inset-0 flex items-center justify-center',
+                    'font-[Outfit] text-[16px] leading-[16px] font-bold tracking-[-0.02em] uppercase',
+                    'transition-all duration-300 ease-in-out',
+                    'group-hover:translate-y-3 group-hover:opacity-0'
+                  )}
+                >
+                  SUBSCRIBE
+                </span>
+                {/* Text that fades in from above after a delay */}
+                <span
+                  className={cn(
+                    'absolute inset-0 flex items-center justify-center',
+                    'font-[Outfit] text-[16px] leading-[16px] font-bold tracking-[-0.02em] uppercase',
+                    '-translate-y-3 opacity-0', // Initial state: invisible and above
+                    // Transition properties are now applied only on hover for this span
+                    'group-hover:translate-y-0 group-hover:opacity-100',
+                    'group-hover:transition-all group-hover:delay-150 group-hover:duration-300 group-hover:ease-in-out'
+                  )}
+                >
+                  SUBSCRIBE
+                </span>
+              </div>
             </div>
           </Button>
         </form>
