@@ -4,8 +4,8 @@ A footer for IKG.
 
 ## How to check it
 
-- [Github](https://github.com/john-data-chen/ikg-footer)
-- [Vercel](https://ikg-footer.vercel.app/)
+- [Source code (GitHub)](https://github.com/john-data-chen/ikg-footer)
+- [Live site (Vercel)](https://ikg-footer.vercel.app/)
 
 ## Tech Stack
 
@@ -13,11 +13,6 @@ A footer for IKG.
 
 - Node.js 22.x
 - A package manager (e.g., npm, yarn, pnpm)
-
-### Commands
-
-- npm install / pnpm install
-- npm run dev / pnpm dev
 
 ### Frontend
 
@@ -32,15 +27,36 @@ A footer for IKG.
 - ESLint 9.x
 - Prettier 3.x
 
+### Setup
+
+```bash
+# Install dependencies
+npm install
+# or
+pnpm install
+
+# Start the development server
+npm run dev
+# or
+pnpm dev
+```
+
 ## Project Structure
 
 ```text
-public/ # Public assets such as SVG
+public/ # Public assets (e.g., SVG)
 src/
-├── component/ # Footer component is here
+├── component/ # Footer and UI component
 │   └── ui/ # Shadcn/UI components
 ├── lib/ # Utility functions
 ├── App.tsx # Main application component
 ├── main.tsx # Entry point for the application
 └── index.css # Global styles
 ```
+
+## Development Records
+
+- Focus was on speedy delivery as per the assignment.
+- Basic code formatting and linting (ESLint, Prettier) are included.
+- Testing and CI were not added in this MVP, but can be integrated if required.
+- Total dev time: Approximately 2–3 hours.
