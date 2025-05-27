@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             type="submit"
             className="group focus-visible:ring-ring relative z-0 flex h-[68px] w-[152px] items-center justify-center rounded-[66px] bg-transparent p-[2px] text-[#03010B] transition-all duration-300 ease-in-out focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
           >
-            <div className="absolute inset-0 -z-10 rounded-[inherit] bg-[conic-gradient(from_245.4deg_at_50%_50%,_#3958FC_18.85%,_#CCFF00_48.99%,_#BD00FF_81.15%)] group-hover:bg-[conic-gradient(from_110.51deg_at_50%_50%,_#3958FC_22.55%,_#CCFF00_49.11%,_#BD00FF_77.45%)]"></div>
+            <div className="absolute inset-0 -z-10 rounded-[inherit] bg-[linear-gradient(245.4deg,_#3958FC_18.85%,_#CCFF00_48.99%,_#BD00FF_81.15%)] group-hover:bg-[linear-gradient(110.51deg,_#3958FC_22.55%,_#CCFF00_49.11%,_#BD00FF_77.45%)]"></div>
             <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-[64px] bg-gradient-to-b from-white to-[#E7E7E7] shadow-[inset_0_0_0_2px_rgba(255,255,255,0.75)] group-hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,0.9)]">
               {/* Container for text animation */}
               <div className="relative h-[16px] w-auto">
