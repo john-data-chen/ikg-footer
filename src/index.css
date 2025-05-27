@@ -3,13 +3,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
-.footer {
-  width: 100%;
-  min-height: 562px;
-  margin-top: 101px;
-  padding-left: 54px;
-  background: #FFFFFF;
-  border-top: 1px solid #EBEBEB;
+@theme {
+  --font-display: 'Outfit', 'sans-serif';
 }
 
 :root {
