@@ -22,9 +22,14 @@ const Footer: React.FC = () => {
           />
           <Button
             type="submit"
-            className="relative z-0 flex h-[84px] w-[203px] items-center justify-center gap-2 rounded-[66px] bg-white font-bold text-black shadow-md transition before:absolute before:inset-0 before:-z-10 before:rounded-[66px] before:bg-[conic-gradient(at_top_right,_#3958FC,_#CCFF00,_#BD00FF,_#3958FC)] before:p-[2px] before:content-[''] after:absolute after:inset-[2px] after:-z-10 after:rounded-[64px] after:bg-white after:content-[''] hover:before:bg-[conic-gradient(at_top_right,_#3958FC,_#CCFF00,_#BD00FF,_#3958FC,_#3958FC)]"
+            className="group focus-visible:ring-ring relative z-0 flex h-[68px] w-[152px] items-center justify-center rounded-[66px] bg-transparent p-[2px] text-[#03010B] transition-all duration-300 ease-in-out focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
           >
-            SUBSCRIBE
+            <div className="absolute inset-0 -z-10 rounded-[inherit] bg-[conic-gradient(from_245.4deg_at_50%_50%,_#3958FC_18.85%,_#CCFF00_48.99%,_#BD00FF_81.15%)] group-hover:bg-[conic-gradient(from_110.51deg_at_50%_50%,_#3958FC_22.55%,_#CCFF00_49.11%,_#BD00FF_77.45%)]"></div>
+            <div className="flex h-full w-full items-center justify-center rounded-[64px] bg-gradient-to-b from-white to-[#E7E7E7] shadow-[inset_0_0_0_2px_rgba(255,255,255,0.75)] group-hover:shadow-[inset_0_0_0_1px_rgba(255,255,255,0.9)]">
+              <span className="font-[Outfit] text-[16px] leading-[16px] font-bold tracking-[-0.02em] uppercase">
+                SUBSCRIBE
+              </span>
+            </div>
           </Button>
         </form>
       </div>
