@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           <Input
             type="email"
             placeholder="your email address"
-            className="flex-1 border-0 bg-transparent px-0 py-0 font-[Outfit] text-[24px] leading-none font-extrabold tracking-[-0.02em] placeholder:font-extrabold placeholder:text-black/50 focus:border-0 focus:ring-0 focus:outline-none"
+            className="flex-1 border-0 bg-transparent px-0 py-0 leading-none tracking-[-0.02em] placeholder:font-[Outfit] placeholder:text-[24px] placeholder:font-extrabold focus:border-0 focus:ring-0 focus:outline-none"
           />
           <Button
             type="submit"
@@ -41,13 +41,11 @@ const Footer: React.FC = () => {
                 >
                   SUBSCRIBE
                 </span>
-                {/* Text that fades in from above after a delay */}
                 <span
                   className={cn(
                     'absolute inset-0 flex items-center justify-center',
                     'font-[Outfit] text-[16px] leading-[16px] font-bold tracking-[-0.02em] uppercase',
-                    '-translate-y-3 opacity-0', // Initial state: invisible and above
-                    // Transition properties are now applied only on hover for this span
+                    '-translate-y-3 opacity-0',
                     'group-hover:translate-y-0 group-hover:opacity-100',
                     'group-hover:transition-all group-hover:delay-150 group-hover:duration-300 group-hover:ease-in-out'
                   )}
