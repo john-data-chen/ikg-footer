@@ -56,7 +56,10 @@ src/
 
 ## Development Records
 
-- Focus was on speedy delivery as per the assignment.
 - Basic code formatting and linting (ESLint, Prettier) are included.
 - Testing and CI were not added in this MVP, but can be integrated if required.
-- Total dev time: Approximately 2–3 hours.
+
+### Minor Design Clarification:
+
+- There appears to be a minor inconsistency in the button label, which shows as both "Subscribe" and "Explore" in the design files.
+- I implemented "Subscribe" based on its prominence and contextual usage. Please feel free to let me know if "Explore" is the intended label.
